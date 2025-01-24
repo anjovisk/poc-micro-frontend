@@ -1,0 +1,31 @@
+{
+  "name": "with-zones",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:home && npm run build:insighter",
+    "build:home": "cd ./apps/home && npm run build",
+    "build:insighter": "cd ./apps/insighter && npm run build",
+    "dev": "npm run dev:home & npm run dev:insighter",
+    "dev:home": "cd ./apps/home && npm run dev",
+    "dev:insighter": "cd ./apps/insighter && npm run dev"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.8",
+    "@types/node": "20.11.30",
+    "prettier": "3.2.5",
+    "turbo": "^2.2.3"
+  },
+  "dependencies": {
+    "next": "15.1.6"
+  },
+  "packageManager": "npm@10.9.2",
+  "engines": {
+    "node": "22.x",
+    "npm": "10.9.2"
+  }
+}

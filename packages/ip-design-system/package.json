@@ -1,0 +1,28 @@
+{
+  "name": "@investplay/design-system",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run build",
+    "compile": "tsc -p tsconfig.json",
+    "build": "npm run clean & npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist"
+  },
+  "type": "module",
+  "exports": {
+    "./smartrating": "./src/components/smartrating/SmartRating.tsx"
+  },
+  "author": "anjovisk",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "next": "^15",
+    "react": "^19",
+    "react-dom": "^19"
+  }
+}
