@@ -15,8 +15,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/insighter-static/_next/:path+",
-        //destination: `${INSIGHTER_URL}/insighter-static/_next/:path+`,
-        destination: `${INSIGHTER_URL}/_next/:path+`,
+        destination: `${INSIGHTER_URL}/insighter-static/_next/:path+`,
       },
     ];
   }
